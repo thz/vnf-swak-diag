@@ -19,6 +19,7 @@ RUN apt-get install -y \
 	iproute2 \
 	iputils-ping \
 	keepalived \
+	ldnsutils \
 	mtr \
 	openssh-client \
 	python \
