@@ -33,4 +33,4 @@ RUN apt-get install -y \
 	tcpdump \
 	vim
 
-ENTRYPOINT [ "bash" ]
+CMD [ "bash" ]
