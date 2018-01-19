@@ -1,7 +1,11 @@
-FROM golang:1.8 as buildstage
+FROM golang:1.9 as buildstage
 
 ENV GOPATH /go
 WORKDIR /go
+RUN go get -u github.com/golang/dep/cmd/dep
+RUN go get -d github.com/osrg/gobgp/gobgp
+RUN go get -d github.com/osrg/gobgp/gobgpd
+RUN cd /go/src/github.com/osrg/gobgp && dep ensure
 RUN go get github.com/osrg/gobgp/gobgp
 RUN go get github.com/osrg/gobgp/gobgpd
 
