@@ -16,6 +16,7 @@ COPY --from=buildstage /go/bin/gobgpd /usr/bin
 
 RUN apt-get update -y
 RUN apt-get install -y \
+	arping \
 	curl \
 	htop \
 	iftop \
