@@ -27,6 +27,7 @@ RUN apt-get install -y \
 	keepalived \
 	ldnsutils \
 	mtr \
+	net-tools \
 	openssh-client \
 	python \
 	socat \
