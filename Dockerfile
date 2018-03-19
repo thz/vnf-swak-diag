@@ -23,6 +23,7 @@ RUN apt-get install -y \
 	iperf \
 	iperf3 \
 	iproute2 \
+	iptables \
 	iputils-ping \
 	keepalived \
 	ldnsutils \
