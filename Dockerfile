@@ -25,6 +25,7 @@ RUN apt-get install -y \
 	iproute2 \
 	iptables \
 	iputils-ping \
+	jq \
 	keepalived \
 	ldnsutils \
 	mtr \
